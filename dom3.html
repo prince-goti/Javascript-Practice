@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello ,i`m prince goti</h1>
+    <p id="pg"> </p>
+    <button onclick="hey()" id="btn">submit</button>
+
+    <script>
+        document.addEventListener("mouseenter",hello)  
+        function hello(){
+            document.getElementById("pg").innerText = "bechlor student";
+            document.getElementById("pg").style.color = "yellow";
+            document.getElementById("pg").style.backgroundColor = "black";  
+        }
+
+        function hey(){
+            document.getElementById("btn").innerText ="submited";
+            document.getElementById("btn").style.color = "white";
+            document.getElementById("btn").style.backgroundColor = "red";
+            document.getElementById("btn").style.border = "5px solid blue"
+
+
+
+        }
+    </script>
+</body>
+</html>

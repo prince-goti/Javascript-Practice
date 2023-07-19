@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- id -->
+    <p id="one">prince goti</p>
+    <p id="two"><span>my name</span>prince goti</p>
+
+    <!-- class -->
+    <ul>
+        <li class ="prince">one</li>
+        <li class ="prince">two</li>
+        <li class ="prince">three</li>
+    </ul>
+
+    <!-- Tagname -->
+    <h4>hello</h4>
+    <h4>prince</h4>
+    <h4>goti</h4>
+
+    <!-- quary selector-->
+    <h1 id="ids">hello</h1>
+    <h2 class="classs">halo</h2>
+    <h3>hey</h3>
+
+    <script>    
+        //id
+        let p = document.getElementById("one");
+         console.log(p.innerText);
+
+         let g = document.getElementById("two");
+         console.log(g.innerHTML);
+
+         //class
+         let c = document.getElementsByClassName("prince");
+         console.log(c[2].innerText);  
+         c[1].innerText = "four";     //change the element
+
+         //Tagname
+         let t = document.getElementsByTagName("h4");
+         console.log(t[1].innerText);
+         t[1].innerText = "parth";
+         t[1].style.color = "yellow";
+
+         //quary selector
+         let q = document.querySelector(".classs");
+         console.log(q);
+
+         //q.className = "pr";
+        // q.classList = "pr in ce";
+         q.setAttribute = ("id" , "prince");
+
+
+
+
+
+     
+     </script>
+    
+</body>
+</html>
