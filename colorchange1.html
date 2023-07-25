@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ 
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #btn{
+            padding: 15px;
+            background-color: yellow;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn"> CLICK ME</button>
+
+    <script>
+        const btn = document.getElementById('btn')
+        const randomcolor = () =>{
+            let alpha = '0123456789ABCDEF'
+            let hex = '#'
+            for( let i = 0; i<6; i++){
+                final = hex + alpha[math.floor(math.random() * 16)]
+            }
+            document.body.style.background = final
+        }
+
+        console.log(randomcolor())
+    </script>
+</body>
+</html>
